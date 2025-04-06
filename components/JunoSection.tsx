@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const JunoSection = () => {
   return (
@@ -8,7 +8,7 @@ const JunoSection = () => {
         <div className="md:w-1/2">
           {/* Make sure juno.jpg is in the public folder */}
           <Image
-            src="/juno.jpg" // Ensure this path is correct
+            src="/juno.webp" // Ensure this path is correct
             alt="Juno the Nova Scotia Duck Tolling Retriever"
             width={400} // Adjusted width
             height={400} // Adjusted height
@@ -33,4 +33,4 @@ const JunoSection = () => {
   );
 };
 
-export default JunoSection; 
+export default JunoSection;
