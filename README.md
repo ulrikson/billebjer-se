@@ -1,6 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# billebjer.se
+## My Goal
+Experiment with Next.js and see how it compares to Wordpress (where most of my websites are currently built).
+
+Tech Stack
+- Next.js
+- Tailwind CSS
+- Shadcn UI
+- Lucide Icons
+
+## ToDos
+
+- [ ] Add sub pages for the projects
+- [ ] Add a tools section with my own tools
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 First, run the development server:
 
