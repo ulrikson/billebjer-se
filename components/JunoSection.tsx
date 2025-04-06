@@ -12,8 +12,8 @@ const JunoSection = () => {
           <Image
             src="/juno.webp"
             alt="Juno the Nova Scotia Duck Tolling Retriever"
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             className="rounded-lg shadow-md w-full h-auto grayscale"
           />
         </div>
