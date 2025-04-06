@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Button from "./Button";
 
 interface ProjectLinkProps {
   slug: string;
@@ -8,13 +8,14 @@ interface ProjectLinkProps {
 
 const ProjectLink: React.FC<ProjectLinkProps> = ({ slug, name }) => {
   return (
-    <Link
+    <Button
       href={`/projects/${slug}`}
-      className="block font-bold text-center text-sm border border-white rounded-full px-5 py-2 hover:bg-white hover:text-black transition-colors duration-300"
+      variant="dark"
+      className="block text-center px-5"
     >
       {name}
-    </Link>
+    </Button>
   );
 };
 
-export default ProjectLink; 
+export default ProjectLink;
