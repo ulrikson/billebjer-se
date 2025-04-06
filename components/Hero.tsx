@@ -3,10 +3,14 @@ import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const Hero = () => {
   return (
-    <section className="text-center py-32">
+    <section className="relative text-center py-32">
+      <div className="absolute top-4 right-4">
+        <ModeToggle />
+      </div>
       <h1 className="text-7xl font-bold">Erik Billebjer Ulrikson</h1>
       <h2 className="text-4xl mt-8 font-bold">Billebjer Konsult AB</h2>
       <p className="text-xl mt-8">Full Stack Developer and Product Manager</p>
