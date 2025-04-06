@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Button from "./Button"; // Import the new Button component
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const JunoSection = () => {
   return (
@@ -17,15 +18,12 @@ const JunoSection = () => {
         </div>
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl font-bold mb-4">Meet Juno</h2>
-          <p className="text-lg mb-6">
-            My Nova Scotia Duck Tolling Retriever.
-          </p>
-          <Button
-            href="mailto:juno@billebjer.se"
-            variant="light"
-          >
-            CONTACT JUNO
-          </Button>
+          <p className="text-lg mb-6">My Nova Scotia Duck Tolling Retriever.</p>
+          <Link href="mailto:juno@billebjer.se" legacyBehavior>
+            <Button variant="outline" size="lg" asChild>
+              <a>CONTACT JUNO</a>
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "./Button";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 interface ProjectLinkProps {
   slug: string;
@@ -8,13 +9,11 @@ interface ProjectLinkProps {
 
 const ProjectLink: React.FC<ProjectLinkProps> = ({ slug, name }) => {
   return (
-    <Button
-      href={`/projects/${slug}`}
-      variant="dark"
-      className="block text-center px-5"
-    >
-      {name}
-    </Button>
+    <Link href={`/projects/${slug}`} legacyBehavior>
+      <Button variant="default" size="lg" asChild>
+        <a>{name}</a>
+      </Button>
+    </Link>
   );
 };
 
