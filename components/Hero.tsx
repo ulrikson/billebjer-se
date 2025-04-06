@@ -6,9 +6,7 @@ const Hero = () => {
     <section className="text-center py-16">
       <h1 className="text-5xl font-bold">Erik Billebjer Ulrikson</h1>
       <h2 className="text-2xl mt-2">Billebjer Konsult AB</h2>
-      <p className="mt-4 text-gray-600">
-        Full Stack Developer and Product Manager
-      </p>
+      <p className="mt-4">Full Stack Developer and Product Manager</p>
       <a
         href="https://github.com/ebillebjer"
         target="_blank"
