@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaWordpress } from "react-icons/fa";
+import { Github, Linkedin, Globe } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="hover:text-gray-700"
         >
-          <FaWordpress className="h-5 w-5" />
+          <Globe className="h-5 w-5" />
         </a>
         <a
           href="https://github.com/ebillebjer"
@@ -21,7 +21,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="hover:text-gray-700"
         >
-          <FaGithub className="h-5 w-5" />
+          <Github className="h-5 w-5" />
         </a>
         <a
           href="https://linkedin.com/in/erikbillebjer"
@@ -29,7 +29,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="hover:text-gray-700"
         >
-          <FaLinkedin className="h-5 w-5" />
+          <Linkedin className="h-5 w-5" />
         </a>
       </div>
       <p>&copy; {currentYear} Billebjer Konsult AB</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { Github } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ModeToggle";
@@ -21,7 +21,7 @@ const Hero = () => {
       >
         <Button variant="outline" size="lg" asChild>
           <a>
-            <FaGithub className="h-5 w-5 mr-2" />
+            <Github className="h-5 w-5 mr-2" />
             GITHUB
           </a>
         </Button>

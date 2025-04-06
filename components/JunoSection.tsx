@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
 
 const JunoSection = () => {
   return (
@@ -21,7 +22,10 @@ const JunoSection = () => {
           <p className="text-lg mb-6">My Nova Scotia Duck Tolling Retriever.</p>
           <Link href="mailto:juno@billebjer.se" legacyBehavior>
             <Button variant="outline" size="lg" asChild>
-              <a>CONTACT JUNO</a>
+              <a>
+                <Mail className="h-5 w-5 mr-2" />
+                CONTACT JUNO
+              </a>
             </Button>
           </Link>
         </div>
