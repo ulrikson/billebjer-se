@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="text-center py-10 text-gray-500 text-sm">
       <div className="flex justify-center space-x-4 mb-4">
         <a
-          href="https://erik.billebjer.se"
+          href="https://billebjer.se"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-700"
