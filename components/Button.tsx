@@ -25,37 +25,28 @@ const Button: React.FC<ButtonProps> = ({
     dark: "bg-transparent text-white border-white hover:bg-white hover:text-black",
   };
 
-  const combinedClassName = `${baseStyles} ${variantStyles[variant]} ${className}`;
-
-  const content = (
-    <>
-      {icon && <span className="mr-2">{icon}</span>}
-      {children}
-    </>
-  );
-
-  // Determine the element type based on the presence of href
   const Component = href ? "a" : "button";
 
-  // Filter props based on the component type
-  let elementProps: any = { className: combinedClassName };
-  if (href) {
-    elementProps.href = href;
-    if (href.startsWith("http")) {
-      elementProps.target = "_blank";
-      elementProps.rel = "noopener noreferrer";
-    }
-    // Filter out button-specific props for anchor tags
-    const { type, ...anchorProps } = props;
-    elementProps = { ...elementProps, ...anchorProps };
-  } else {
-    elementProps.type = props.type || "button"; // Default button type
-    // Filter out anchor-specific props for button tags
-    const { target, rel, ...buttonProps } = props;
-    elementProps = { ...elementProps, ...buttonProps };
-  }
+  const elementProps = {
+    className: `${baseStyles} ${variantStyles[variant]} ${className}`,
+    ...(href
+      ? {
+          href,
+          target: href.startsWith("http") ? "_blank" : undefined,
+          rel: href.startsWith("http") ? "noopener noreferrer" : undefined,
+        }
+      : {
+          type: props.type || "button",
+        }),
+    ...props,
+  };
 
-  return <Component {...elementProps}>{content}</Component>;
+  return (
+    <Component {...elementProps}>
+      {icon && <span className="mr-2">{icon}</span>}
+      {children}
+    </Component>
+  );
 };
 
 export default Button;
