@@ -40,7 +40,7 @@ const ProjectsSection = () => {
         {projects.map((project) => (
           <Button
             key={project.slug}
-            variant="link"
+            variant="outline"
             size="lg"
           >
             <a href={project.url} target="_blank" rel="noopener noreferrer">
