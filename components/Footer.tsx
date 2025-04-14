@@ -6,9 +6,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="text-center py-10 text-zinc-500 text-sm">
+    <footer className="text-center py-10 text-sm">
       <div className="flex justify-center space-x-4 mb-4">
-        <Button variant="ghost" size="icon" className="hover:text-zinc-700" asChild>
+        <Button variant="ghost" size="icon" asChild>
           <a
             href="https://billebjer.se"
             target="_blank"
@@ -17,7 +17,7 @@ const Footer = () => {
             <Globe className="h-5 w-5" />
           </a>
         </Button>
-        <Button variant="ghost" size="icon" className="hover:text-zinc-700" asChild>
+        <Button variant="ghost" size="icon" asChild>
           <a
             href="https://github.com/ebillebjer"
             target="_blank"
@@ -26,7 +26,7 @@ const Footer = () => {
             <Github className="h-5 w-5" />
           </a>
         </Button>
-        <Button variant="ghost" size="icon" className="hover:text-zinc-700" asChild>
+        <Button variant="ghost" size="icon" asChild>
           <a
             href="https://linkedin.com/in/erikbillebjer"
             target="_blank"
