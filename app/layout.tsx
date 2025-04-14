@@ -12,8 +12,29 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Erik Billebjer Ulrikson",
-  description: "Portfolio of Erik Billebjer Ulrikson",
+  metadataBase: new URL("https://billebjer.se"),
+  title: "Erik Billebjer Ulrikson - Portfolio",
+  description:
+    "Portfolio of Erik Billebjer Ulrikson, showcasing projects and skills.",
+  keywords: [
+    "Erik Billebjer Ulrikson",
+    "Portfolio",
+    "Software Engineer",
+    "Web Developer",
+    "Next.js",
+    "React",
+  ],
+  authors: [{ name: "Erik Billebjer Ulrikson" }],
+  creator: "Erik Billebjer Ulrikson",
+  publisher: "Erik Billebjer Ulrikson",
+  openGraph: {
+    title: "Erik Billebjer Ulrikson - Portfolio",
+    description: "Explore the portfolio of Erik Billebjer Ulrikson.",
+    url: "https://billebjer.se",
+    siteName: "Erik Billebjer Ulrikson Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
