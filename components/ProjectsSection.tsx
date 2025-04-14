@@ -32,7 +32,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="bg-black text-white py-16 px-4">
+    <section className="bg-zinc-50 dark:bg-zinc-900 py-16 px-4">
       <h2 className="text-4xl font-bold text-center mb-12">
         Selected Projects
       </h2>
@@ -40,10 +40,8 @@ const ProjectsSection = () => {
         {projects.map((project) => (
           <Button
             key={project.slug}
-            variant="outline"
+            variant="link"
             size="lg"
-            asChild
-            className="dark"
           >
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               {getNameFromSlug(project.slug)}
