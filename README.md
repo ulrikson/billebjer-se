@@ -10,8 +10,10 @@ Tech Stack
 
 ## ToDos
 
+- [ ] SEO optimization
 - [ ] Add sub pages for the projects
 - [ ] Add a tools section with my own tools
+- [ ] Add frontend tests for fun
 
 ## Getting Started
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).

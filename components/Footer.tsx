@@ -19,7 +19,7 @@ const Footer = () => {
         </Button>
         <Button variant="ghost" size="icon" asChild>
           <a
-            href="https://github.com/ebillebjer"
+            href="https://github.com/ulrikson"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -28,7 +28,7 @@ const Footer = () => {
         </Button>
         <Button variant="ghost" size="icon" asChild>
           <a
-            href="https://linkedin.com/in/erikbillebjer"
+            href="https://se.linkedin.com/in/erik-billebjer-ulrikson"
             target="_blank"
             rel="noopener noreferrer"
           >
