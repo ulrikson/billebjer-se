@@ -1,14 +1,33 @@
 import React from "react";
-import ProjectLink from "@/components/ProjectLink"; // Use path alias
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
-// TODO: Replace with actual project data
+const getNameFromSlug = (slug: string) => {
+  return slug.replace(/-/g, " ").toUpperCase();
+};
+
 const projects = [
-  { slug: "leadpilot", name: "LEADPILOT" },
-  { slug: "ai-cross-validation", name: "AI CROSS VALIDATION" },
-  { slug: "home-dashboard", name: "HOME DASHBOARD" },
-  { slug: "statistics-thesis", name: "STATISTICS THESIS" },
-  { slug: "economics-thesis", name: "ECONOMICS THESIS" },
-  { slug: "site-activity-index", name: "SITE ACTIVITY INDEX" },
+  { slug: "leadpilot", url: "https://leadpilot.com" },
+  {
+    slug: "ai-cross-validation",
+    url: "https://github.com/ulrikson/ai-n-cross-validation",
+  },
+  {
+    slug: "home-dashboard",
+    url: "https://github.com/ulrikson/home-dashboard",
+  },
+  {
+    slug: "statistics-thesis",
+    url: "https://github.com/ulrikson/statistics-thesis",
+  },
+  {
+    slug: "economics-thesis",
+    url: "https://handelsradet.se/forskning-och-utveckling/studentuppsatser/?s%C3%B6kord=should",
+  },
+  {
+    slug: "site-activity-index",
+    url: "https://www.dagensanalys.se/det-betyder-alltsa-att-hemsidor-i-snitt-andrar-20-procent-av-innehallet-varje-dag/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -19,11 +38,17 @@ const ProjectsSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
         {projects.map((project) => (
-          <ProjectLink
+          <Button
             key={project.slug}
-            slug={project.slug}
-            name={project.name}
-          />
+            variant="outline"
+            size="lg"
+            asChild
+            className="dark"
+          >
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              {getNameFromSlug(project.slug)}
+            </a>
+          </Button>
         ))}
       </div>
     </section>
