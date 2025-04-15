@@ -1,6 +1,5 @@
 import React from "react";
 import { Github } from "lucide-react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ModeToggle";
 
