@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 
@@ -20,14 +19,15 @@ const JunoSection = () => {
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl font-bold mb-4">Meet Juno</h2>
           <p className="text-lg mb-6">My Nova Scotia Duck Tolling Retriever.</p>
-          <Link href="mailto:juno@billebjer.se" legacyBehavior>
-            <Button variant="outline" size="lg" asChild>
-              <a>
-                <Mail className="h-5 w-5 mr-2" />
-                CONTACT JUNO
-              </a>
-            </Button>
-          </Link>
+          <Button variant="outline" size="lg" asChild>
+            <a 
+              href="mailto:juno@billebjer.se"
+              aria-label="Send email to Juno"
+            >
+              <Mail className="h-5 w-5 mr-2" aria-hidden="true" />
+              CONTACT JUNO
+            </a>
+          </Button>
         </div>
       </div>
     </section>

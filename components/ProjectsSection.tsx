@@ -37,8 +37,13 @@ const ProjectsSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
         {projects.map((project) => (
-          <Button key={project.slug} variant="outline" size="lg">
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
+          <Button key={project.slug} variant="outline" size="lg" asChild>
+            <a 
+              href={project.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label={`View project: ${getNameFromSlug(project.slug)}`}
+            >
               {getNameFromSlug(project.slug)}
             </a>
           </Button>

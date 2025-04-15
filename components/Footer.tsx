@@ -13,6 +13,7 @@ const Footer = () => {
             href="https://billebjer.se"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Personal website"
           >
             <Globe className="h-5 w-5" />
           </a>
@@ -22,6 +23,7 @@ const Footer = () => {
             href="https://github.com/ulrikson"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub profile"
           >
             <Github className="h-5 w-5" />
           </a>
@@ -31,6 +33,7 @@ const Footer = () => {
             href="https://se.linkedin.com/in/erik-billebjer-ulrikson"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
           >
             <Linkedin className="h-5 w-5" />
           </a>

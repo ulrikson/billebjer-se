@@ -22,8 +22,9 @@ const Hero = () => {
             href="https://github.com/ulrikson"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View my GitHub profile"
           >
-            <Github className="h-5 w-5 mr-2" />
+            <Github className="h-5 w-5 mr-2" aria-hidden="true" />
             GITHUB
           </a>
         </Button>

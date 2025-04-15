@@ -21,3 +21,4 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Follow DRY principles and create reusable components
 - Use types/interfaces instead of any
 - Prefer const assertions for static values
+- Ensure web accessibility standards are met
