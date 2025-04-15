@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://billebjer.se",
       lastModified: new Date(),
-      changeFrequency: "yearly",
+      changeFrequency: "monthly",
       priority: 1,
     },
   ];

@@ -12,8 +12,8 @@ const projects = [
     url: "https://github.com/ulrikson/ai-n-cross-validation",
   },
   {
-    slug: "home-dashboard",
-    url: "https://github.com/ulrikson/home-dashboard",
+    slug: "all-repos",
+    url: "https://github.com/ulrikson?tab=repositories",
   },
   {
     slug: "statistics-thesis",
@@ -37,11 +37,7 @@ const ProjectsSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
         {projects.map((project) => (
-          <Button
-            key={project.slug}
-            variant="outline"
-            size="lg"
-          >
+          <Button key={project.slug} variant="outline" size="lg">
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               {getNameFromSlug(project.slug)}
             </a>

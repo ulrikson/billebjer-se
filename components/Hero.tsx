@@ -18,19 +18,16 @@ const Hero = () => {
         <p className="text-xl mt-8 mb-16">
           Full Stack Developer and Product Manager
         </p>
-        <Link
-          href="https://github.com/ulrikson"
-          legacyBehavior
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline" size="lg" asChild>
-            <a>
-              <Github className="h-5 w-5 mr-2" />
-              GITHUB
-            </a>
-          </Button>
-        </Link>
+        <Button variant="outline" size="lg" asChild>
+          <a
+            href="https://github.com/ulrikson"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="h-5 w-5 mr-2" />
+            GITHUB
+          </a>
+        </Button>
       </div>
     </section>
   );
