@@ -15,7 +15,7 @@ const Hero = () => {
         </h1>
         <h2 className="text-4xl mt-8 font-bold">Billebjer Konsult AB</h2>
         <p className="text-xl mt-8 mb-16">
-          Full Stack Developer and Product Manager
+          CTO and Full Stack Developer
         </p>
         <Button variant="outline" size="lg" asChild>
           <a
