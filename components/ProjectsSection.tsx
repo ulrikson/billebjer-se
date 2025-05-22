@@ -1,11 +1,16 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
+interface Project {
+  slug: string;
+  url: string;
+}
+
 const getNameFromSlug = (slug: string) => {
   return slug.replace(/-/g, " ").toUpperCase();
 };
 
-const projects = [
+const projects: Project[] = [
   // Displayed in the order they are listed here
   { slug: "leadpilot", url: "https://leadpilot.com" },
   {
