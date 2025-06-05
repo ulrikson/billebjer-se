@@ -1,6 +1,6 @@
 # billebjer.se
 ## My Goal
-Experiment with Next.js and see how it compares to Wordpress (where most of my websites are currently built).
+Experiment with Next.js and see how it compares to WordPress (where most of my websites are currently built).
 
 Tech Stack
 - Next.js
