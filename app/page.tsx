@@ -8,7 +8,7 @@ export default function Home() {
       <Hero />
       <ProjectsSection />
       <JunoSection />
-      {/* Footer will be added via layout.tsx later */}
+      {/* Footer is included via layout.tsx */}
     </main>
   );
 }
